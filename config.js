@@ -1,16 +1,16 @@
 'use strict';
 
 module.exports = {
-  url: 'https://lumen.netlify.com',
-  title: 'Blog by John Doe',
-  subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+  url: 'https://wholeman.dev',
+  title: 'wholeman.dev',
+  subtitle: '홀맨의 개발블로그',
   copyright: '© All rights reserved.',
-  disqusShortname: '',
+  disqusShortname: 'wholeman',
   postsPerPage: 4,
-  googleAnalyticsId: 'UA-73379983-2',
+  googleAnalyticsId: 'UA-136935445-1',
   menu: [
     {
-      label: 'Articles',
+      label: 'Posts',
       path: '/'
     },
     {
@@ -23,14 +23,14 @@ module.exports = {
     }
   ],
   author: {
-    name: 'John Doe',
+    name: 'wholeman',
     photo: '/photo.jpg',
-    bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    bio: '홀맨의 개발블로그',
     contacts: {
-      email: '#',
+      email: 'wholeman.dev@gmail.com',
       telegram: '#',
       twitter: '#',
-      github: '#',
+      github: 'wholemann',
       rss: '#',
       vkontakte: '#'
     }

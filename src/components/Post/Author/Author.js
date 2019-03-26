@@ -9,15 +9,17 @@ export const PureAuthor = ({ data }) => {
   return (
     <div className={styles['author']}>
       <p className={styles['author__bio']}>
-        {author.bio}
+        Written by {author.name}
+        <p className='author__social'>
         <a
-          className={styles['author__bio-twitter']}
-          href={getContactHref('twitter', author.contacts.twitter)}
+          className={styles['author__bio-github']}
+          href={getContactHref('github', author.contacts.github)}
           rel="noopener noreferrer"
           target="_blank"
         >
-          <strong>{author.name}</strong> on Twitter
+        Github
         </a>
+        </p>
       </p>
     </div>
   );
@@ -33,7 +35,7 @@ export const Author = (props) => (
               name
               bio
               contacts {       
-                twitter
+                github
               }
             }
           }
