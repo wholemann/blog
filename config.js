@@ -31,7 +31,7 @@ module.exports = {
       telegram: '#',
       twitter: '#',
       github: 'wholemann',
-      rss: 'rss.xml',
+      rss: '/rss.xml',
       vkontakte: '#'
     }
   }
