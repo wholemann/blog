@@ -11,7 +11,7 @@ tags:
 description: "애자일을 하는 사람들은 유저 스토리 작성에 집착한다. 유저 스토리 작성이 정말 강력한 도구이긴 하다. 하지만 많은 사람들이 잘못 작성하고 있다."
 ---
 
-> 이글은 [Engineering guide to writing correct User Stories](https://sobolevn.me/2019/02/engineering-guide-to-user-stories#clarifying-roles)을 번역한 것입니다.  
+> 이 글은 원 저자인 [Nikita Sobolev](https://sobolevn.me/about/) 허락을 받아 [Engineering guide to writing correct User Stories](https://sobolevn.me/2019/02/engineering-guide-to-user-stories#clarifying-roles)을 번역한 것입니다.  
 최대한 한국말에 맞게 의역을 해보았습니다. 번역으로 인해 의미가 흐려질 경우 실제 원어를 그대로 썼으며, 추가 설명을 위해  각주를 달아놓았습니다.  
 부족한 번역이지만 읽어주시고, 피드백 부탁드립니다.
 
