@@ -12,7 +12,16 @@ Blog: https://wholeman.dev
 Github: https://github.com/wholemann
 
 ## Experiences
-## Skills
+(작성 중)
+
+## Skills experienced
+
+- Languages: Java, PHP, Python, JavaScript, TypeScript, Kotlin
+- Frontend: React, MobX
+- Backend: Node.js and Express
+- Mobile: Android
+- Database: MySQL, MariaDB, Redis, MongoDB
+
 ## Education
 #### 한양대학교(서울) 2006.03~2014.02
   - 컴퓨터공학부
