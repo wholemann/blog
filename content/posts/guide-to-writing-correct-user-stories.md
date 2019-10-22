@@ -196,10 +196,10 @@ Encrypted private messages won’t be supported | Must
 따라서 우선 순위가 적용되도록 유저 스토리의 이름을 수정한 기능은 다음과 같다.
 
 ```cucumber
-Feature: Architects must track issues' progress
+Feature: Architects must track issues progress
   As an architect
   I want to have up-to-date information about Gitlab issues
-  So that I can overview and track the issues' progress
+  So that I can overview and track the issues progress
 
   ...
 ```
