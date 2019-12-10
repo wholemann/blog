@@ -2,12 +2,14 @@
 
 module.exports = {
   url: 'https://wholeman.dev',
-  title: 'wholeman.dev',
-  subtitle: '홀맨의 개발블로그',
+  pathPrefix: '/',
+  title: '홀맨의 개발블로그',
+  subtitle: '수련의 결과를 남기는 곳',
   copyright: '© All rights reserved.',
   disqusShortname: 'wholeman',
-  postsPerPage: 4,
+  postsPerPage: 6,
   googleAnalyticsId: 'UA-136935445-1',
+  useKatex: false,
   menu: [
     {
       label: 'Posts',
@@ -17,18 +19,29 @@ module.exports = {
       label: 'About me',
       path: '/pages/about'
     },
+    {
+      label: 'Wiki',
+      path: '/wiki'
+    }
   ],
   author: {
     name: 'wholeman',
     photo: '/photo.jpg',
-    bio: '홀맨의 개발블로그',
+    bio: 'Try Driven Developer',
     contacts: {
       email: 'wholeman.dev@gmail.com',
-      telegram: '#',
-      twitter: '#',
+      facebook: 'soohyung.choi.7',
+      telegram: '',
+      twitter: '',
       github: 'wholemann',
       rss: '/rss.xml',
-      vkontakte: '#'
+      vkontakte: '',
+      linkedin: '',
+      instagram: 'csh0606',
+      line: '',
+      gitlab: '',
+      weibo: '',
+      codepen: ''
     }
   }
 };

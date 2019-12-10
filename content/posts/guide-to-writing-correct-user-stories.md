@@ -4,10 +4,10 @@ date: "2019-10-17"
 template: "post"
 draft: false
 category: "번역"
+slug: "/posts/guide-to-writing-correct-user-stories/"
 tags:
-  - "Design"
-  - "Typography"
-  - "Web Development"
+  - "User Story"
+  - "Agile"
 description: "애자일을 하는 사람들은 유저 스토리 작성에 집착한다. 유저 스토리 작성이 정말 강력한 도구이긴 하다. 하지만 많은 사람들이 잘못 작성하고 있다."
 ---
 
@@ -39,7 +39,7 @@ So that I can list all current tasks
 
 ## 문제 발견 및 해결
 
-다들 알겠지만 우리의 요구 사항은 정확하고, 모호하지 않으며, 완전하고, 일관성이 있고, 우선순위가 있으며, 검증가능하고, 수정할 수 있고, 추적 가능해야 한다. 물론 처음엔 요구사항처럼 보이진 않을 수도 있지만 말이다. 
+다들 알겠지만 우리의 요구 사항은 정확하고, 모호하지 않으며, 완전하고, 일관성이 있고, 우선순위가 있으며, 검증가능하고, 수정할 수 있고, 추적 가능해야 한다. 물론 처음엔 요구사항처럼 보이진 않을 수도 있지만 말이다.
 
 유저 스토리는 위에 열거된 특성 중 일부가 없는 경향이 있다. 그 부분을 고쳐야 한다.
 
@@ -146,7 +146,7 @@ Feature: Tracking issues' progress
 
 ![Gitlab webhooks](https://thepracticaldev.s3.amazonaws.com/i/iglagw03ngpwu3fo88i4.png)
 
-이제 이 유저 스토리를 완성하기 위해 두 가지 시나리오를 추가할 수 있다. 
+이제 이 유저 스토리를 완성하기 위해 두 가지 시나리오를 추가할 수 있다.
 
 ```cucumber
 Feature: Tracking issues progress
@@ -185,8 +185,8 @@ Feature: Tracking issues progress
 
 제품과 함께 일하는 여러 아키텍트와 몇 차례 대화를 나눈 결과, 다음 항목들은 반드시 해야되는 것임을 알았다.
 
-| <center>Feature</center> | Priority
-:------- | :--------:
+| Feature | Priority
+:-------: | :--------:
 Authenticated users must be able to send private messages | Must
 Architects must track issuesÎ progress | Must
 There should be a notification about incoming private message | Must
