@@ -236,3 +236,8 @@ Enum은 JVM or 언어 차원에서 클래스를 정의함과 동시에 인스턴
 * 인스턴스 1개 - object
 * 인스턴스 n개 - enum
 * 인스턴스 ?개 - class
+
+## 참고 서적
+
+* Kotlin in Action
+* 함수형 코틀린
