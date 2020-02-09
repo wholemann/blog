@@ -557,7 +557,7 @@ inline fun addListener(noinline listener: (User) -> Unit) {
 
 위와 같이 noinline 수정자로 이 문제를 해결할 수 있다. inline 함수에서 noinline을 사용하면 고차 함수 본문은 inline화 하지만 noinline 람다 파라미터는 건드리지 않는다. 결과적으로 바이트코드는 완전한 인라인 함수만큼 빠르지는 않다.
 
-인라인 람다 함수는 다른 실행 컨텍스트(로컬 객체, 중첩된 람다, 쓰레드) 내부에서 실행될 수 없다.
+인라인 람다 함수는 다른 실행 컨텍스트(로컬 객체, 중첩된 람다, 쓰레드) 내부에서 실행될 수 없다.
 
 ```kotlin
 inline fun transfromName(transform: (name: String) -> String): List<User> {
