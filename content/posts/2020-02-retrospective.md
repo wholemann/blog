@@ -29,10 +29,10 @@ description: "2020년 2월을 돌아보았다."
 ### 포스팅
 
 - 함수형 코틀린 스터디 정리글 3,4회차 발행
-  - [3회차](functional-kotlin-study-03.md)
-  - [4회차](functional-kotlin-study-04.md)
+  - [3회차](/posts/functional-kotlin-study-03)
+  - [4회차](/posts/functional-kotlin-study-04)
 
-- [HTML 위키 문서](../wiki/web/html.md) 발행
+- [HTML 위키 문서](/wiki/html) 발행
 
 ### 스터디
 
