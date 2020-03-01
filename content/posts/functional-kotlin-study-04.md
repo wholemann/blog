@@ -107,7 +107,7 @@ var myEven: Int
 
 만약 setValue를 구현하지 않는다면 다음과 같은 에러를 만나게 된다.
 
->Type 'MakeEven' has no method 'setValue(Nothing?, KProperty<*>, Int)' and thus it cannot serve as a delegate for var (read-write property)
+>Type 'MakeEven' has no method 'setValue(Nothing?, KProperty<*>, Int)' and thus it cannot serve as a delegate for var (read-write property)
 
 ```kotlin
 abstract class MakeEven(initialValue: Int) {
@@ -306,7 +306,7 @@ getFact라는 함수를 보면 suspend가 걸려있음을 확인할 수 있다. 
 
 일반적인 멀티스레드 작업은 스레드마다 task 전체를 맡기기 때문에 스레드가 많이 필요하다.
 
-반면 코틀린 코루틴은 백그라운드 스레드를 task 개수만큼 여러 개 생성하지 않고 필요할 때만 추가적으로 만든다. 그러면 백그라운드 스레드가 여러 개가 아닌데 어떻게 우리 눈에는 동시처리로 보이는 것일까? suspend 단위로 쪼개진 작업을 Event Queue에 넣어 놓고 놀고 있는 스레드가 suspend 단위로 쪼개진 작업을 가져다가 처리하는 것이다. suspend 단위가 작으면 작을수록 해당 블록 처리가 굉장히 빨라지기 때문에 스레드 1개가 여러 task의 suspend 블록들을 번갈아 가면서 시분할로 처리할 수 있게 된다. 그래서 우리한텐 마치 멀티 스레드가 동시에 동작하는 것처럼 보인다. 분명한 건 절대 동시는 아니다. 시분할 된 suspend 블록들을 굉장히 빠른 속도로 처리해서 '동시처럼' 보일 뿐이다.
+반면 코틀린 코루틴은 백그라운드 스레드를 task 개수만큼 여러 개 생성하지 않고 필요할 때만 추가적으로 만든다. 그러면 백그라운드 스레드가 여러 개가 아닌데 어떻게 우리 눈에는 동시처리로 보이는 것일까? suspend 단위로 쪼개진 작업을 Event Queue에 넣어 놓고 놀고 있는 스레드가 suspend 단위로 쪼개진 작업을 가져다가 처리하는 것이다. suspend 단위가 작으면 작을수록 해당 블록 처리가 굉장히 빨라지기 때문에 스레드 1개가 여러 task의 suspend 블록들을 번갈아 가면서 시분할로 처리할 수 있게 된다. 그래서 우리한텐 마치 멀티 스레드가 동시에 동작하는 것처럼 보인다. 분명한 건 절대 동시는 아니다. 시분할 된 suspend 블록들을 굉장히 빠른 속도로 처리해서 '동시처럼' 보일 뿐이다.
 
 따라서 코틀린 코루틴에서 성능을 극대화 하고 싶다면 되도록 suspend 블록의 단위를 잘게 나눠야 한다. 이건 순수하게 개발자의 역량에 달려있다. 만약 suspend 블록이 커지면 코루틴의 성능 효율은 전혀 기대할 수 없다. 스레드 1개가 task A, B, C를 suspend 단위로 쪼개서 실행을 하는데 만약 suspend 블록이 크다면 A......., B....., C..., A....., B.... 이런식으로 진행되기 때문에 성능적 이득이 전혀 없다. 우리가 원하는 건 A, B, C, A, B, C, A, B, ... 이기 때문이다.
 
